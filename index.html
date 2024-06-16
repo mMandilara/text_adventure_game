@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Day #1 - Text Adventure Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <p class="header">Escape Your Cruise</p>
+        <p id="text1" class="text">It's the year 1910 and you are a second class passenger on a cruise, sailing from England to India. You wake up in your cabin to the sound of the waves splashing on the ship's walls and the gulls calling, and only these sounds. That is strange, isn't it? Why is the ship so quiet?</p>
+        <p id="text2" class="text"> Want to check out what has happened to passengers of this cruise ship?</p>
+        <div id="story" class="story"></div>
+        <div id="choices" class="choices"></div>
+
+        <div class="separator"></div>
+        <button id="startButton" class="btn start" onclick="startGame()">
+            <div class="icon">
+                <i class='bx bx-play-circle bx-tada bx-flip-horizontal'></i>
+            </div>
+            <p>Start Adventure</p>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
