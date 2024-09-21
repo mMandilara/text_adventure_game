@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="music.css">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Text Adventure Game</title>
-</head>
 
 <body>
-    <div class="container">
+    <div class="container"><!-- Main game -->
         <p class="header">Escape Your Cruise</p>
         <p id="text1" class="text">It's the year 1910 and you are a second class passenger on a cruise, sailing from England to India. You wake up in your cabin to the sound of the waves splashing on the ship's walls and the gulls calling, and only these sounds. That is strange, isn't it? Why is the ship so quiet?</p>
         <p id="text2" class="text"> Want to check out what has happened to passengers of this cruise ship?</p>
@@ -17,14 +17,33 @@
         <div id="choices" class="choices"></div>
 
         <div class="separator"></div>
-        <button id="startButton" class="btn start" onclick="startGame()">
-            <div class="icon">
-                <i class='bx bx-play-circle bx-tada bx-flip-horizontal'></i>
-            </div>
+        
+        <!-- Start button -->
+        <button id="startButton" class="btn startChoose" onclick="startGame()">
             <p>Start Adventure</p>
         </button>
     </div>
 
+    <div class="player"><!-- Play music -->
+        <div class="speaker">
+            <div class="antenna"></div>
+        </div>
+        <button class="button"></button>
+            <div class="slider-container">
+                <input
+                  type="range"
+                  class="slider"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0.7"
+                />
+            </div>
+    </div>
+    <audio loop class="song" src="audio.mp3" preload="auto"></audio> <!--Music '𝐕𝐢𝐜𝐭𝐨𝐫𝐢𝐚𝐧 𝐌𝐮𝐫𝐝𝐞𝐫 𝐌𝐲𝐬𝐭𝐞𝐫𝐲 | 𝐃𝐞𝐭𝐞𝐜𝐭𝐢𝐯𝐞 𝐌𝐮𝐬𝐢𝐜 𝐟𝐨𝐫 𝐒𝐨𝐥𝐯𝐢𝐧𝐠 𝐂𝐫𝐢𝐦𝐞𝐬 | 𝐃𝐚𝐫𝐤 𝐀𝐜𝐚𝐝𝐞𝐦𝐢𝐚' from 𝐑𝐄𝐆𝐍𝐔𝐌 𝐔𝐌𝐁𝐑𝐀𝐄 
+    https://www.youtube.com/watch?v=ZkcnW1ZzHJI -->
+
     <script src="script.js"></script>
+
 </body>
 </html>
