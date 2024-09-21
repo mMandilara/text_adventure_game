@@ -5,7 +5,30 @@ function startGame() {
 
     displayStoryPart('start');
 }
+// Play music function
+let state = false;
+let btn = document.querySelector('.button');
+let speaker = document.querySelector('.speaker');
+let slider = document.querySelector('.slider');
+let song = document.querySelector('.song');
 
+btn.addEventListener("click", () => {
+  if (state == false) {
+    speaker.classList.add("on");
+    setTimeout(() => {
+      song.play();
+    }, 1000);
+  } else {
+    speaker.classList.remove("on");
+    song.pause();
+  }
+  state = !state;
+});
+slider.addEventListener("input", (e) => {
+  song.volume = Number(e.target.value);
+});
+
+// Game function
 function displayStoryPart(partId) {
     const part = storyData[partId];
     const storyContainer = document.getElementById('story');
