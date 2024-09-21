@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', normal;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
+    background-color: rgb(154, 107, 38);
+    width: 200px;
+    height: 110px;
+    position: absolute;
+    transform: translate(-10%, -10%);
+    left: 5%;
+    top: 80%;
+    border-radius: 8px;
+    box-shadow: -8px 0 0 0 rgb(52, 33, 14)
+}
+
+.speaker {
+    background-color: #3a3a3a;
+    width: 80px;
+    height: 80px;
+    position: center;
+    border-radius: 50%;
+    border: 4px solid black;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.antenna {
+  height: 150px;
+  width: 4px;
+  background-color: gray;
+  border-radius: 50%;
+  position: absolute;
+  transform: rotate(75deg);
+  bottom: 38px;
+  right: -10px;
+}
+
+.slider{
+  -webkit-appearance: none;
+  appearance: none;
+  transform: rotate(-90deg);
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  bottom: 80px;
+  right: 10px;
+  background-color: rgb(117, 82, 30);
+  outline: none;
+  border-radius: 5px;
+  border: 3px solid rgb(201, 141, 52);
+  transform: rotate(360deg);
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 12px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.button {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(10, 10, 10);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 17px;
+  right: 45px;
+  border: none;
+  border: 5.5px solid rgb(63, 52, 68);
+  outline: none;
+  cursor: pointer;
+}
