@@ -8,19 +8,17 @@
     font-family: 'Space Grotesk', normal;
 }
 
-body{
+html{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
-    background-image: 
-    radial-gradient(at 94% 56%, hsla(352,76%,61%,0.5) 0px, transparent 40%),
-    radial-gradient(at 16% 5%, hsla(208, 88%, 13%, 0.6) 0px, transparent 50%),
-    radial-gradient(at 62% 93%, hsla(65, 84%, 64%, 0.15) 0px, transparent 45%),
-    radial-gradient(at 86% 45%, hsla(39, 73%, 18%, 0.6) 0px, transparent 50%),
-    radial-gradient(at 17% 2%, hsla(236, 73%, 18%, 0.6) 0px, transparent 50%),
-    radial-gradient(at 30% 76%, hsla(155, 59%, 59%, 0.3) 0px, transparent 40%);
+    background-image: url(room.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 .container{
@@ -61,7 +59,7 @@ body{
     gap: 15px;
     margin-bottom: 10px;
     height: 50px;
-    width: 290px;
+    width: 240px;
     border: none;
     border-radius:10cqmax;
     font-size: 23px;
@@ -81,7 +79,7 @@ body{
     gap: 15px;
     margin-bottom: 10px;
     height: auto;
-    width: 100%;
+    width: 110%;
     max-width: 480px;
     border-color: #26065e;
     border-radius:10cqmax;
