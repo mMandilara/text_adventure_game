@@ -50,7 +50,7 @@ function displayStoryPart(partId) {
 //Story's choises
 const storyData = {
     start: {
-        text: "You wake up on a cruise ship in the middle of the Atlantic. A note under your door reads, 'Come outside, this is your ship now.' You find yourself alone on the entire ship.",
+        text: "You wake up on a cruise ship in the middle of the Atlantic. It too quite you need some music to wake you up. Play the radio. as you listen to the music you notice a note under your door reads, 'Come outside, this is your ship now.' You find yourself alone on the entire ship.",
         choices: [
             { text: "Try to change the course of the ship", next: "changeCourse" },
             { text: "Call for help from the radio", next: "callHelp" }
