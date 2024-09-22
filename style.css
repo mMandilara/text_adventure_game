@@ -64,8 +64,8 @@ html{
     border-radius:10cqmax;
     font-size: 23px;
     cursor: pointer;
-    color: #fff;
-    background: #26065e;
+    color: #ffffff;
+    background: #5e3806;
 }
 
 .btn i{
@@ -81,7 +81,7 @@ html{
     height: auto;
     width: 110%;
     max-width: 480px;
-    border-color: #26065e;
+    border-color: #5e3806;
     border-radius:10cqmax;
     font-size: medium;
     cursor: pointer;
