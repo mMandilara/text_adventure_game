@@ -4,6 +4,8 @@
 
 You play a passanger on a cruise ship in 1910 who wakes up in an abandoned ship, while listening to this small radio play. You're stack in this mysterious, now ghost ship, sailing from England to India trying to get a way out or a way back to the real world.
 
+URL: https://mmandilara.github.io/text_adventure_game/
+
 ## Screenshot
 ---
 Below are two screenshots of the project:
