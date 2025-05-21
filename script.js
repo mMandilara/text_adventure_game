@@ -100,7 +100,7 @@ const storyData = {
         text: "You open a cabinet to read a few artifacts. The papers have a yellow-ish colour, they look old, like they've been here for decades. Next to the pages is a pack of painkillers. Your eye catches a glimpse of light from the bed. Under the pillow you find a small knife.",
         choices: [
             {text: "You take it with you and you go to check out the deck", next: "captainsWindow"},
-            {text: "You take the painkillers. They could expired but if need be they will be useful", next: "supplies"}
+            {text: "You take the painkillers. They could be expired but if need be they will be useful", next: "supplies"}
         ]
     },
     captainsWindow: {
@@ -190,13 +190,13 @@ const storyData = {
         ]
     },
     mirror:{
-        text:"You find a random open room in first-class (nice). You enter a plain room, too small with no furniture, only a mirror on a wall. You walk in front of it, you look terrible. You go to find another room, open the door and is the same thing only now there is no mirror and you notice that there is a door to the bedroom. 'I see, so this is the entrance...so there are no mirrors in the entrance....?'",
+        text:"You find a random open room in first-class (nice). You enter a plain room, too small with no furniture, only a mirror on a wall. You walk in front of it, you look terrible. You go to find another room, open the door and is the same thing only now there is no mirror and you notice that there is a door to the previous bedroom, they're connected. 'I see, so this is the entrance...but if there was no mirror before, what did I see...?'",
         choices: [
             {text: "Go back to check the mirror", next:"checkMirror"}
         ]
     },
     checkMirror: {
-        text: "You go to the last room and surely you notice there is no reflection. So what did you see before? You here something behind you, but before you turn around you feel a cold metal piercing your shoulder. 'I am so sorry' the voice says behind you. They pull out the knife as you turn to see...yourself.",
+        text: "You go to the last room and surely you notice there is no reflection. So what did you see before? You hear something behind you, but before you turn around you feel a cold metal piercing your shoulder. 'I am so sorry' the voice says behind you. They pull out the knife as you turn to see...yourself.",
         choices: [
             {text: "Start punching yourself", next: "punch"},
             {text: "Run out of the room", next: "getAway"}
@@ -228,7 +228,7 @@ const storyData = {
         ]
     },
     knifeKitchen: {
-        text: "You go the kitchen to find a knife, surely there must be many here. WHY IS THERE NO KNIFE?? *thump*, you here something from the dining room. You go out to find blood on a chair and (not so surprisingly) a bloodied knife.",
+        text: "You go the kitchen to find a knife, surely there must be many here. WHY IS THERE NO KNIFE?? *thump*, you hear something from the dining room. You go out to find blood on a chair and (not so surprisingly) a bloodied knife.",
         choices: [
             {text: "You take the knife", next: "findYou"}
         ]
